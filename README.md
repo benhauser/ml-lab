@@ -138,12 +138,12 @@ Very similar results to the _Cost Function_. Octave is the most elegant. Python 
 
 Octave has the simplest and cleanest syntax for performing Linear Algebra. It's a great choice for learning, studying, and prototyping Machine Learning problems.
 
-Python is close behind Octave in succintness. It has other things going for it however. It's a mainstream programming language with a huge userbase and massive library support. This makes it the go to choice for machine learning in industry.
+Python is close behind Octave in succintness. It has other things going for it however. It's a mainstream programming language with a huge userbase and massive library support. This makes it the go to choice for Machine Learning in industry.
 
 JavaScript is a clunky choice for performing Linear Algebra / Machine Learning. This hasn't stopped motivated people from [going ahead](https://cs.stanford.edu/people/karpathy/convnetjs/) and [doing it anyway](https://deeplearnjs.org/) so your mileage may vary.
 
 In conclusion, if you are a researcher and/or interested in understanding and manipulating Machine Learning algorithms at a low level then Octave is a great choice.
 
-If you are in industry and are applying machine learning algorthms at scale then Python might be for you.
+If you are in industry and are applying Machine Learning algorthms at scale then Python might be for you.
 
 It's probably best to avoid JavaScript if you can.
