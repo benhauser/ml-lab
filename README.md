@@ -1,8 +1,4 @@
-# ml-lab
-
-Machine Learning Laboratory / Experiments
-
-## Machine Learning, what language should I use?
+# Machine Learning, what language should I use?
 
 I'm trying to figure out the best programming language to use for Machine Learning. My three candidates are:
 
@@ -54,7 +50,7 @@ var y = math.subset(data, math.index(math.range(0, m), 1));
 var m = math.size(y)[0];
 ```
 
-You can see that the Octave and Python code looks quite similar. The tricky part of the Python solution was to use slice indexing (`0:1` instead of `0`) to maintain rank-2 arrays. The JavaScript solution is very verbose in comparison.
+You can see that Octave and Python look quite similar. The tricky part of the Python solution was to use slice indexing (`0:1` instead of `0`) to maintain rank-2 arrays. The JavaScript solution is very verbose in comparison.
 
 ### 2. Cost Function
 
@@ -91,7 +87,7 @@ function computeCost(X, y, theta) {
 
 The Octave solution is wonderfully concise and elegant.
 
-The Python solution comes close. We use numpy's `array` datatype as opposed to the `matrix` datatype ([recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to a function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
+The Python solution comes close. We use numpy's `array` datatype as opposed to the `matrix` datatype ([this is recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to a function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
 
 Once again the JavaScript solution is really quite ugly. _Every_ matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
 
