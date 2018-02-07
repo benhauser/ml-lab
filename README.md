@@ -8,11 +8,11 @@ I'm trying to figure out the best programming language to use for Machine Learni
 
 1. Octave (Matlab). This is the language chosen by Andrew Ng for his excellent [Machine Learning](https://www.coursera.org/learn/machine-learning) course at Stanford. Andrew has stated this was a carefully considered decision based on his experience that students learn more quickly in this high-level language.
 1. Python. This seems to be the most popular choice for Machine Learning in industry.
-1. JavaScript. I considered JavaScript because the laguage is so ubiquitous and convenient. I've been doing a lot of JavaScript lately (haven't we all?) and I knew I could show off my Machine Learning programs in a browser directly if I went down this path.
+1. JavaScript. I considered JavaScript because the language is so ubiquitous and convenient. I've been doing a lot of JavaScript lately (haven't we all?) and I knew I could show off my Machine Learning programs in a browser directly if I went down this path.
 
 ## Linear Algebra
 
-One of the mild surprises you experience when you first dig in to Machine Learning is that, under the hood, it's largely just Linear Algebra. Nothing fancy or difficult. Just good old Matrices and Vectors from high school mathematics.
+One of the mild surprises you experience when you first dig in to the current generation of Machine Learning techniques is that, under the hood, they're largely just applied [Linear Algebra](https://en.wikipedia.org/wiki/Linear_algebra). Nothing fancy or difficult. Just good old Matrices and Vectors from high school mathematics.
 
 I still remember with some fondness my Linear Algebra textbook from Maths II in my senior year. It was called _Matrices and Vectors_ and it had a floppy, green cover with yellowing paper inside.
 
@@ -26,7 +26,7 @@ The Linear Algebra parts were done using [numpy](http://www.numpy.org/) for Pyth
 
 Let's see how it turned out. We'll compare three key parts of the solution in each language.
 
-### 1. Parsing Training Data
+### 1. Processing Training Data
 
 Assume the training data has been loaded into the variable `data`. This code separates the data into two column vectors and counts the number of training examples `m`.
 
@@ -58,7 +58,7 @@ You can see that the Octave and Python code looks quite similar. The tricky part
 
 ### 2. Cost Function
 
-A typical linear regression cost function in each language.
+Now let's examine a typical linear regression cost function in each language.
 
 #### Octave
 
@@ -91,9 +91,9 @@ function computeCost(X, y, theta) {
 
 The Octave solution is wonderfully concise and elegant.
 
-The Python solution comes close. Unfortunately the asterisk cannot be overridden to perform matrix multiplication so we have to resort to a function call `dot()`. This pollutes things somewhat and is a bit of a drag.
+The Python solution comes close. [It is recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F) to use numpy's `array` datatype as opposed to the `matrix` datatype. The only downside of this that we must resort to a function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
 
-Once again the JavaScript solution is pretty darn ugly. Every matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
+Once again the JavaScript solution is really quite ugly. _Every_ matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
 
 ### 3. Gradient Descent
 
@@ -136,18 +136,18 @@ function gradientDescent(X, y, theta, alpha, num_iters) {
 }
 ```
 
-Very similar results to the cost function snippet. Octave is the most elegant. Python is ok apart from that annoying `dot()` function call. And JavaScript is a hot mess.
+Very similar results to the _Cost Function_. Octave is the most elegant. Python is ok apart from that annoying `dot()` function call. And JavaScript is a hot mess.
 
 ## Conclusion
 
-Octave is the simplest and cleanest language of these three for performing Linear Algebra. It therefore carries my strongest recommendation for learning, studying, and prototyping machine learning problems.
+Octave has the simplest and cleanest syntax for performing Linear Algebra. It's a great choice for learning, studying, and prototyping Machine Learning problems.
 
 Python is close behind Octave in succintness. It has other things going for it however. It's a mainstream programming language with a huge userbase and massive library support. This makes it the go to choice for machine learning in industry.
 
-JavaScript is a clunky choice for performing Linear Algebra. I cannot recommend it as a primary platform for Machine Learning work. This hasn't stopped motivated people from [going ahead](https://cs.stanford.edu/people/karpathy/convnetjs/) and [doing it anyway](https://deeplearnjs.org/) so your mileage may vary.
+JavaScript is a clunky choice for performing Linear Algebra / Machine Learning. This hasn't stopped motivated people from [going ahead](https://cs.stanford.edu/people/karpathy/convnetjs/) and [doing it anyway](https://deeplearnjs.org/) so your mileage may vary.
 
-So, in conclusion, if you are a researcher and/or interested in understanding and manipulating machine learning algorithms at a low level then use Octave.
+In conclusion, if you are a researcher and/or interested in understanding and manipulating Machine Learning algorithms at a low level then Octave is a great choice.
 
-If you are in industry and are applying machine learning algorthms at scale then use Python.
+If you are in industry and are applying machine learning algorthms at scale then Python might be for you.
 
-Try to avoid JavaScript if you can.
+It's probably best to avoid JavaScript if you can.
