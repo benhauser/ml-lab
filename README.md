@@ -8,11 +8,11 @@ I'm trying to figure out the best programming language to use for Machine Learni
 
 ## Linear Algebra
 
-One of the mild surprises you experience when you first dig in to the current generation of Machine Learning techniques is that, under the hood, they're largely just applied [Linear Algebra](https://en.wikipedia.org/wiki/Linear_algebra). Nothing fancy or difficult. Just good old Matrices and Vectors from high school mathematics.
+One of the first surprises you experience when you dig in to (the current generation of) Machine Learning techniques is that, under the hood, they're largely just applied [Linear Algebra](https://en.wikipedia.org/wiki/Linear_algebra). Nothing fancy or difficult. Just good old Matrices and Vectors from high school mathematics.
 
 I still remember with some fondness my Linear Algebra textbook from Maths II in my senior year. It was called _Matrices and Vectors_ and it had a floppy, green cover with yellowing paper inside.
 
-So my original question has now become: _Linear Algebra, what language should I use?_
+So my titular question has now become: _Linear Algebra, what language should I use?_
 
 ## The Experiment
 
@@ -87,7 +87,7 @@ function computeCost(X, y, theta) {
 
 The Octave solution is wonderfully concise and elegant.
 
-The Python solution comes close. We use numpy's `array` datatype as opposed to the `matrix` datatype ([this is recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to a function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
+The Python solution comes close. We use numpy's `array` datatype as opposed to the `matrix` datatype ([as recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to the function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
 
 Once again the JavaScript solution is really quite ugly. _Every_ matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
 
@@ -142,8 +142,8 @@ Python is close behind Octave in succintness. It has other things going for it h
 
 JavaScript is a clunky choice for performing Linear Algebra / Machine Learning. This hasn't stopped motivated people from [going ahead](https://cs.stanford.edu/people/karpathy/convnetjs/) and [doing it anyway](https://deeplearnjs.org/) so your mileage may vary.
 
-In conclusion, if you are a researcher and/or interested in understanding and manipulating Machine Learning algorithms at a low level then Octave is a great choice.
+In conclusion, if you are a researcher and/or interested in understanding and manipulating Machine Learning algorithms at a low level then Octave is a fine choice.
 
-If you are in industry and are applying Machine Learning algorthms at scale then Python might be for you.
+If you are in industry and are applying Machine Learning algorthms at scale then Python might be the best option.
 
 It's probably best to avoid JavaScript if you can.
