@@ -87,7 +87,7 @@ function computeCost(X, y, theta) {
 
 The Octave solution is wonderfully concise and elegant.
 
-The Python solution comes close. We use numpy's `array` datatype as opposed to the `matrix` datatype ([as recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to the function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
+The Python solution comes close. We use numpy's `array` datatype as opposed to its `matrix` datatype ([as recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to the function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
 
 Once again the JavaScript solution is really quite ugly. _Every_ matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
 
@@ -142,8 +142,8 @@ Python is close behind Octave in succintness. It has other things going for it h
 
 JavaScript is a clunky choice for performing Linear Algebra / Machine Learning. This hasn't stopped motivated people from [going ahead](https://cs.stanford.edu/people/karpathy/convnetjs/) and [doing it anyway](https://deeplearnjs.org/) so your mileage may vary.
 
-In conclusion, if you are a researcher and/or interested in understanding and manipulating Machine Learning algorithms at a low level then Octave is a fine choice.
+In conclusion, if you are a researcher and/or interested in understanding and manipulating Machine Learning algorithms at a low level then I would lean toward Octave.
 
-If you are in industry and are applying Machine Learning algorthms at scale then Python might be the best option.
+If you are in industry and are applying Machine Learning algorthms at scale then Python might be the right choice.
 
 It's probably best to avoid JavaScript if you can.
