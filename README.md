@@ -16,7 +16,7 @@ One of the mild surprises you experience when you first dig in to the current ge
 
 I still remember with some fondness my Linear Algebra textbook from Maths II in my senior year. It was called _Matrices and Vectors_ and it had a floppy, green cover with yellowing paper inside.
 
-So my original question has now become: What's the best programming language for doing Linear Algebra?
+So my original question has now become: _Linear Algebra, what language should I use?_
 
 ## The Experiment
 
@@ -91,7 +91,7 @@ function computeCost(X, y, theta) {
 
 The Octave solution is wonderfully concise and elegant.
 
-The Python solution comes close. [It is recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F) to use numpy's `array` datatype as opposed to the `matrix` datatype. The only downside of this that we must resort to a function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
+The Python solution comes close. We use numpy's `array` datatype as opposed to the `matrix` datatype ([recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to a function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
 
 Once again the JavaScript solution is really quite ugly. _Every_ matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
 
