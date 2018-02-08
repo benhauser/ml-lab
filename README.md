@@ -87,9 +87,9 @@ function computeCost(X, y, theta) {
 
 The Octave solution is wonderfully concise and elegant.
 
-The Python solution comes close. We use numpy's `array` datatype as opposed to its `matrix` datatype ([as recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this that we must resort to the function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
+The Python solution comes close. We use numpy's `array` datatype as opposed to its `matrix` datatype ([as recommended](http://scipy.github.io/old-wiki/pages/NumPy_for_Matlab_Users#A.27array.27_or_.27matrix.27.3F_Which_should_I_use.3F)). The only downside of this is that we must resort to the function call `dot()` to perform matrix multiplication. This pollutes things somewhat and is a bit of a drag.
 
-Once again the JavaScript solution is really quite ugly. _Every_ matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
+Once again the JavaScript solution is really quite ugly. Every matrix operation requires a function call: `multiply()`, `subtract()`, `transpose()`.
 
 ### 3. Gradient Descent
 
