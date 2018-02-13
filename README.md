@@ -10,7 +10,7 @@ I'm trying to figure out the best programming language to use for Machine Learni
 
 One of the first surprises you experience when you dig in to (the current generation of) Machine Learning techniques is that, under the hood, they're largely just applied [Linear Algebra](https://en.wikipedia.org/wiki/Linear_algebra). Nothing fancy or difficult. Just good old Matrices and Vectors from high school mathematics.
 
-I still remember with some fondness my Linear Algebra textbook from Maths II in my senior year (over 25 years ago?!). It was called _Matrices and Vectors_ and it had a floppy, green cover with faint yellow paper inside.
+I still remember with some fondness my Linear Algebra textbook from Maths II in my senior year (over 25 years ago?!). It was called _Matrices and Vectors_ and it had a floppy, green cover with yellowish paper inside.
 
 So my titular question has now become: _Linear Algebra, what language should I use?_
 
